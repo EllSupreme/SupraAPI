@@ -37,7 +37,6 @@
                             <include>redis.clients</include>
                             <include>org.apache.commons</include>
                             <include>org.json</include>
-                            <include>com.zaxxer</include>
                             <include>org.slf4j</include>
                             <include>org.twitter4j</include>
                             <include>*.yml</include>
@@ -128,13 +127,6 @@
             <systemPath>${project.basedir}/lib/spigot.jar</systemPath>
         </dependency>
 
-        <!-- Hikari -->
-        <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>2.7.2</version>
-            <scope>compile</scope>
-        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
