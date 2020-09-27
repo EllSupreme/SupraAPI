@@ -1,5 +1,9 @@
 # SupraAPI
 
+🦺 This api is currently under development, so it is updated regularly. Some functions may not be 100% functional. Thank you for your understanding.
+
+---
+
 This api contains class that allow you to develop faster.
 
 Server Version | Support
