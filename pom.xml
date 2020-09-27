@@ -6,7 +6,7 @@
 
     <groupId>io.supreme.supraapi</groupId>
     <artifactId>SupraAPI</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,7 +16,6 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub OWNER Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/EllSupreme/SupraAPI</url>
         </repository>
     </distributionManagement>
