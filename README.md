@@ -21,6 +21,8 @@ Server Version | Support
 
 **Installation**
 
+⛔ Currently not working (This option is coming soon).
+
 ```console
 <dependency>
   <groupId>io.supreme</groupId>
