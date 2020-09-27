@@ -13,8 +13,6 @@ public class SupraAPI extends JavaPlugin {
     @Override
     public void onLoad() {
 
-
-
         super.onLoad();
     }
 
@@ -33,4 +31,10 @@ public class SupraAPI extends JavaPlugin {
 
         super.onDisable();
     }
+
+    public static SupraAPI getPlugin() {
+        return getPlugin(SupraAPI.class);
+    }
+
+
 }
