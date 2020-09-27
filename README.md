@@ -18,7 +18,11 @@ Server Version | Support
 **Installation**
 
 ```console
-
+<dependency>
+  <groupId>io.supreme</groupId>
+  <artifactId>supraapi</artifactId>
+  <version>VERSION</version>
+</dependency>
 ```
 
 ---
