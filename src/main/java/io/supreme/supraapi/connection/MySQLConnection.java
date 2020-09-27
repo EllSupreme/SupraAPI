@@ -1,4 +1,4 @@
-package io.supreme.supraapi.sql;
+package io.supreme.supraapi.connection;
 
 public class MySQLConnection {
 

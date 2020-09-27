@@ -1,4 +1,4 @@
-package io.supreme.supraapi.redis;
+package io.supreme.supraapi.connection;
 
 public class RedisConnection {
 
