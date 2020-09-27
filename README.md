@@ -1,4 +1,6 @@
 # SupraAPI
-A api for minecraft.
 
-Author : ElSupreme_
+
+
+## Description
+Cette API vous permet de développer plus vite.
