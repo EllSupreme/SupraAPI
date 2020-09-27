@@ -1,4 +1,4 @@
-package io.supreme.supraapi.connection;
+package io.supreme.supraapi.core.connection;
 
 public class JedisConnection {
 
