@@ -31,4 +31,7 @@ public class MangoDBConnection {
         connection.close();
     }
 
+    public Connection getConnection() {
+        return connection;
+    }
 }
