@@ -9,6 +9,15 @@ public class SQLConfig {
     private final String password;
     private final boolean enable;
 
+    /**
+     * Config for connect to a SQL server
+     * @param host
+     * @param port
+     * @param database
+     * @param username
+     * @param password
+     * @param enable
+     */
     public SQLConfig(final String host, final int port, final String database, final String username, final String password, final boolean enable) {
         this.host = host;
         this.port = port;
