@@ -1,4 +1,4 @@
-package io.supreme.supraapi.core.config;
+package io.supreme.supraapi.database.config;
 
 public class JedisConfig {
 

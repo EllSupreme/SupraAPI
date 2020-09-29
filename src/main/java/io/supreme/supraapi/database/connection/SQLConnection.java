@@ -1,8 +1,8 @@
-package io.supreme.supraapi.core.connection;
+package io.supreme.supraapi.database.connection;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import io.supreme.supraapi.core.config.SQLConfig;
+import io.supreme.supraapi.database.config.SQLConfig;
 
 public class SQLConnection {
 

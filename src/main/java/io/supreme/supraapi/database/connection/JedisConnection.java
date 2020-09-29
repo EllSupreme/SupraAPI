@@ -1,6 +1,6 @@
-package io.supreme.supraapi.core.connection;
+package io.supreme.supraapi.database.connection;
 
-import io.supreme.supraapi.core.config.JedisConfig;
+import io.supreme.supraapi.database.config.JedisConfig;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
