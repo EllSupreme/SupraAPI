@@ -2,9 +2,11 @@ package io.supreme.supraapi;
 
 import io.supreme.supraapi.database.config.JedisConfig;
 import io.supreme.supraapi.database.config.MangoDBConfig;
+import io.supreme.supraapi.database.config.RabbitMQConfig;
 import io.supreme.supraapi.database.config.SQLConfig;
 import io.supreme.supraapi.database.connection.JedisConnection;
 import io.supreme.supraapi.database.connection.MangoDBConnection;
+import io.supreme.supraapi.database.connection.RabbitMQConnection;
 import io.supreme.supraapi.database.connection.SQLConnection;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -27,7 +29,7 @@ public class SupraAPI extends JavaPlugin {
                 getConfig().getBoolean("sql.enable")
         ));
 
-        new MangoDBConnection().connect(new MangoDBConfig(
+        new RabbitMQConnection().connect(new RabbitMQConfig(
                 getConfig().getString("sql.host"),
                 getConfig().getInt("sql.port"),
                 getConfig().getString("sql.username"),
