@@ -8,6 +8,14 @@ public class MangoDBConfig {
     private final int port;
     private final boolean enable;
 
+    /**
+     * Config for connect to MangoDB
+     * @param host
+     * @param port
+     * @param username
+     * @param password
+     * @param enable
+     */
     public MangoDBConfig(String host, int port, String username, String password, boolean enable) {
         this.host = host;
         this.port = port;
