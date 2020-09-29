@@ -35,10 +35,8 @@ Server Version | Support
 
 **Contains**
 
-- SQL Connections and Config
-- RabbitMQ Connections and Config
-- MangoDB Connections and Config
-- Jedis Connections and Config
+- Connections
+- Configurations
 - Interfaces
 - And more ...
 
