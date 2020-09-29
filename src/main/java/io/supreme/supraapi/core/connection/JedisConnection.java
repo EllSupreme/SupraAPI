@@ -1,26 +1,40 @@
 package io.supreme.supraapi.core.connection;
 
+import io.supreme.supraapi.core.config.RedisConfig;
+import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.JedisPoolConfig;
+
 public class JedisConnection {
 
-    private final String host;
-    private final String password;
-    private final boolean enable;
+    private JedisPool jedis;
 
-    public JedisConnection(final String host, final String password, final boolean enable) {
-        this.host = host;
-        this.password = password;
-        this.enable = enable;
+    public void connect(RedisConfig config) {
+        if (config.isEnable()) {
+            final ClassLoader previous = Thread.currentThread().getContextClassLoader();
+            Thread.currentThread().setContextClassLoader(Jedis.class.getClassLoader());
+            final JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
+            this.jedis = new JedisPool((GenericObjectPoolConfig) jedisPoolConfig, config.getHost(), 6379, 3000, null, 0);
+            Thread.currentThread().setContextClassLoader(previous);
+            try (Jedis jedisConnector = pool().getResource()) {
+                System.out.println("Redis Ready to use");
+            }
+            catch (Exception exception) {
+                exception.printStackTrace();
+                System.err.println("Problem connect Redis");
+                this.jedis.close();
+                this.jedis = null;
+            }
+        }
     }
 
-    public String getHost() {
-        return this.host;
+    public void disconnect() {
+        this.jedis.close();
     }
 
-    public String getPassword() {
-        return this.password;
+    private JedisPool pool() {
+        return this.jedis;
     }
 
-    public boolean isEnable() {
-        return this.enable;
-    }
 }
