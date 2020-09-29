@@ -36,4 +36,8 @@ public class SQLConnection {
         this.hikariDataSource.close();
     }
 
+    public HikariDataSource getHikariDataSource() {
+        return this.hikariDataSource;
+    }
+
 }
