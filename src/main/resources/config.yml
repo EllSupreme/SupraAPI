@@ -3,4 +3,22 @@
 #        v 0.0.1        #
 #########################
 
-# Pleas use json config :)
+sql:
+  host: ""
+  port: ""
+  database: ""
+  username: ""
+  password: ""
+  enable: false
+
+jedis:
+  host: ""
+  password: ""
+  enable: false
+
+mangodb:
+  host: ""
+  port: ""
+  username: ""
+  password: ""
+  enable: false
