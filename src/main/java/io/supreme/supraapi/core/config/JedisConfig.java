@@ -1,12 +1,12 @@
 package io.supreme.supraapi.core.config;
 
-public class RedisConfig {
+public class JedisConfig {
 
     private final String host;
     private final String password;
     private final boolean enable;
 
-    public RedisConfig(final String host, final String password, final boolean enable) {
+    public JedisConfig(final String host, final String password, final boolean enable) {
         this.host = host;
         this.password = password;
         this.enable = enable;

@@ -1,6 +1,6 @@
 package io.supreme.supraapi.core.connection;
 
-import io.supreme.supraapi.core.config.RedisConfig;
+import io.supreme.supraapi.core.config.JedisConfig;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -10,7 +10,7 @@ public class JedisConnection {
 
     private JedisPool jedis;
 
-    public void connect(RedisConfig config) {
+    public void connect(JedisConfig config) {
         if (config.isEnable()) {
             final ClassLoader previous = Thread.currentThread().getContextClassLoader();
             Thread.currentThread().setContextClassLoader(Jedis.class.getClassLoader());
