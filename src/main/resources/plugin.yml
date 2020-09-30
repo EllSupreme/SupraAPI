@@ -1,4 +1,4 @@
-main: io.supreme.supraapi
+main: io.supreme.supraapi.SupraAPI
 name: SupraAPI
 author: Supreme_
 version: 1.0.0
