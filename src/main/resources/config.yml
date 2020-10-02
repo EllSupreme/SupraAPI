@@ -7,29 +7,29 @@ channels:
   message: "SupraAPI:Message"
 
 sql:
-  host: ""
-  port: ""
-  database: ""
-  username: ""
-  password: ""
-  enable: false
+  host: "127.0.0.1"
+  port: "3306"
+  database: "database"
+  username: "root"
+  password: "root"
+  enable: true
 
 jedis:
-  host: ""
-  password: ""
-  enable: false
+  host: "127.0.0.1"
+  password: "root"
+  enable: true
 
 mongodb:
-  host: ""
-  port: ""
-  username: ""
-  password: ""
-  database: ""
-  enable: false
+  host: "127.0.0.1"
+  port: "27017"
+  username: "root"
+  password: "root"
+  database: "database"
+  enable: true
 
 rabbitmq:
-  host: ""
-  port: ""
-  username: ""
-  password: ""
-  enable: false
+  host: "127.0.0.1"
+  port: "5672"
+  username: "root"
+  password: "root"
+  enable: true
