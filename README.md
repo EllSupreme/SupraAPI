@@ -1,5 +1,3 @@
-![Supreme_](https://avatars0.githubusercontent.com/u/45270643?s=460&u=92a20c5f238235301d8af7c15b19227cff0b497c&v=4)
-
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/Version-0.0.1-%2376B900.svg?&style=for-the-badge&logo=&logoColor=white" />
   <img alt="Stability" src="https://img.shields.io/badge/Stability-Stable-%230071C5.svg?&style=for-the-badge&logo=&logoColor=white" />
