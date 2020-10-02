@@ -1,11 +1,11 @@
 package io.supreme.supraapi;
 
 import io.supreme.supraapi.database.config.JedisConfig;
-import io.supreme.supraapi.database.config.MangoDBConfig;
+import io.supreme.supraapi.database.config.MongoDBConfig;
 import io.supreme.supraapi.database.config.RabbitMQConfig;
 import io.supreme.supraapi.database.config.SQLConfig;
 import io.supreme.supraapi.database.connection.JedisConnection;
-import io.supreme.supraapi.database.connection.MangoDBConnection;
+import io.supreme.supraapi.database.connection.MongoDBConnection;
 import io.supreme.supraapi.database.connection.RabbitMQConnection;
 import io.supreme.supraapi.database.connection.SQLConnection;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -24,17 +24,26 @@ public class SupraAPI extends JavaPlugin {
         ));
 
         new JedisConnection().connect(new JedisConfig(
-                getConfig().getString("sql.host"),
+                getConfig().getString("jedis.host"),
                 getConfig().getString("sql.password"),
                 getConfig().getBoolean("sql.enable")
         ));
 
+        new MongoDBConnection().connect(new MongoDBConfig(
+                getConfig().getString("mongo.host"),
+                getConfig().getInt("mongodb.port"),
+                getConfig().getString("mongodb.username"),
+                getConfig().getString("mongodb.password"),
+                getConfig().getString("mongodb.database"),
+                getConfig().getBoolean("mongodb.enable")
+        ));
+
         new RabbitMQConnection().connect(new RabbitMQConfig(
-                getConfig().getString("sql.host"),
-                getConfig().getInt("sql.port"),
-                getConfig().getString("sql.username"),
-                getConfig().getString("sql.password"),
-                getConfig().getBoolean("sql.enable")
+                getConfig().getString("rabbitmq.host"),
+                getConfig().getInt("rabbitmq.port"),
+                getConfig().getString("rabbitmq.username"),
+                getConfig().getString("rabbitmq.password"),
+                getConfig().getBoolean("rabbitmq.enable")
         ));
 
         super.onLoad();

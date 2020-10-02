@@ -16,7 +16,15 @@ jedis:
   password: ""
   enable: false
 
-mangodb:
+mongodb:
+  host: ""
+  port: ""
+  username: ""
+  password: ""
+  database: ""
+  enable: false
+
+rabbitmq:
   host: ""
   port: ""
   username: ""

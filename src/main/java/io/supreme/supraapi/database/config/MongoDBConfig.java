@@ -1,10 +1,11 @@
 package io.supreme.supraapi.database.config;
 
-public class MangoDBConfig {
+public class MongoDBConfig {
 
     private final String host;
     private final String username;
     private final String password;
+    private final String database;
     private final int port;
     private final boolean enable;
 
@@ -14,13 +15,15 @@ public class MangoDBConfig {
      * @param port
      * @param username
      * @param password
+     * @param database
      * @param enable
      */
-    public MangoDBConfig(String host, int port, String username, String password, boolean enable) {
+    public MongoDBConfig(String host, int port, String username, String password, String database, boolean enable) {
         this.host = host;
         this.port = port;
         this.username = username;
         this.password = password;
+        this.database = database;
         this.enable = enable;
     }
 
@@ -38,6 +41,10 @@ public class MangoDBConfig {
 
     public String getPassword() {
         return this.password;
+    }
+
+    public String getDatabase() {
+        return this.database;
     }
 
     public boolean isEnable() {

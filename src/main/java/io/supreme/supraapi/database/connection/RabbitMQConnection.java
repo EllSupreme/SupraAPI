@@ -2,7 +2,6 @@ package io.supreme.supraapi.database.connection;
 
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import io.supreme.supraapi.database.config.MangoDBConfig;
 import io.supreme.supraapi.database.config.RabbitMQConfig;
 
 import java.io.IOException;

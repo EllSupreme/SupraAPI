@@ -12,7 +12,7 @@ public class JedisConfig {
      * @param password
      * @param enable
      */
-    public JedisConfig(final String host, final String password, final boolean enable) {
+    public JedisConfig(String host, String password, boolean enable) {
         this.host = host;
         this.password = password;
         this.enable = enable;

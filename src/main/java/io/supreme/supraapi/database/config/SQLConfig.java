@@ -18,7 +18,7 @@ public class SQLConfig {
      * @param password
      * @param enable
      */
-    public SQLConfig(final String host, final int port, final String database, final String username, final String password, final boolean enable) {
+    public SQLConfig(String host, int port, String database, String username, String password, boolean enable) {
         this.host = host;
         this.port = port;
         this.database = database;
