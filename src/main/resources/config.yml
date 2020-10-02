@@ -3,6 +3,9 @@
 #        v 0.0.1        #
 #########################
 
+channels:
+  message: "SupraAPI:Message"
+
 sql:
   host: ""
   port: ""

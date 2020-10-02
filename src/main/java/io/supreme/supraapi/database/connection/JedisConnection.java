@@ -33,7 +33,7 @@ public class JedisConnection {
         this.jedis.close();
     }
 
-    private JedisPool pool() {
+    public JedisPool pool() {
         return this.jedis;
     }
 
