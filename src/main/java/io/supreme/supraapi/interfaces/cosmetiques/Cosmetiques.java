@@ -13,6 +13,4 @@ public interface Cosmetiques {
 
     public abstract void depsawn(Player player);
 
-
-
 }
