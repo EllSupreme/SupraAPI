@@ -1,10 +1,10 @@
 #########################
-#        SupraAPI       #
+#       NathanAPI       #
 #        v 1.0.0        #
 #########################
 
 channels:
-  message: "SupraAPI:Message"
+  message: "NathanAPI:Message"
 
 sql:
   host: "127.0.0.1"

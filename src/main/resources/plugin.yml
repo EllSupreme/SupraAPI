@@ -1,4 +1,4 @@
-main: io.supreme.supraapi.SupraAPI
-name: SupraAPI
-author: Supreme_
+main: io.nathan.nathanapi.NathanAPI
+name: NathanAPI
+author: Nathan-Guillaume
 version: 1.0.0
