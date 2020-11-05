@@ -5,7 +5,7 @@
   <img alt="Language" src="https://img.shields.io/badge/Lang-java-%23ED8B00.svg?&style=for-the-badge&logo=&logoColor=white" />
 </p>
 
-# SupraAPI
+# NathanAPI
 
 🦺 This api is currently under development, so it is updated regularly. Some functions may not be 100% functional. Thank you for your understanding.
 
@@ -36,4 +36,4 @@ Server Version | Support
 - And more ...
 
 ## Developer
-- Supreme_
+- [Nathan Guillaume](https://github.com/Nathan-Guillaume)
